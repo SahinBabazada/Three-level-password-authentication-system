@@ -1,6 +1,6 @@
 import {elements, elementStrings, clear, clearFields, updatePattern, renderOne, renderTwo, renderThree} from './views/base';
 import User from './models/userModel';
-import Users from './models/allusers';
+import Users from './models/allUsers';
 import "../sass/main.scss";
 // Reloads
 const state = {};
