@@ -75,11 +75,11 @@ const rLevelTwo = () => {
     if(document.querySelector(elementStrings.formTwo).checkValidity()) {
         const pattern = document.querySelector(elementStrings.pattern).value;
         if(pattern === '') {
-            alert('Color pattern cannot be empty! Please click on the color icons to choose a pattern.');
+            alert('The color scheme can not be empty! Please click on the color icons to select a pattern.');
             return false;
 
         } else if(pattern.length < 6) {
-            alert('Color pattern must contain at least 2 colors!');
+            alert('There must be at least 2 colors in the color pattern!');
             clearFields();
             return false;
 
@@ -155,7 +155,7 @@ const oLevelOne = (users) => {
     if(document.querySelector(elementStrings.formOne).checkValidity()) {
         const found = users.getAllUsers().find(el => el.username === document.querySelector(elementStrings.username).value);
         if(!found) {
-            alert('There is no matching account for the username you entered!');
+            alert('There is no suitable account for the username you entered!');
             return false;
         }
         state.current = found;
@@ -176,7 +176,7 @@ const oLevelTwo = () => {
         const pattern = document.querySelector(elementStrings.pattern).value;
         const match = state.current.comparePattern(pattern);
         if(!match) {
-            alert('The color pattern you entered does not match that associated with the username!');
+            alert('The color pattern you entered does not match the username!');
             clearFields();
             return false;
         }

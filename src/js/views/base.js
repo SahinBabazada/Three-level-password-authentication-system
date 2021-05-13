@@ -96,11 +96,11 @@ const markups = {
 
 const replacements = {
     oneLD: 'Please enter your username and password.',
-    oneRD: 'Please choose username and password. Username must be at least 3 characters and password must be at least 6 characters.',
-    twoLD: 'Please click on the colors below in the order you picked during registration.',
-    twoRD: 'Please click on the colors below in any order to create a pattern.',
-    threeLD: 'Please drag and drop the images below to the locations you specified during registration.',
-    threeRD: 'Please drag and drop the images below to your preferred locations to create a graphical pattern.'
+    oneRD: 'Please choose your username and password. Username must be at least 3 characters and password must be at least 6 characters.',
+    twoLD: 'Please click on the colors below according to the order you chose during registration.',
+    twoRD: 'Please click on the colors below to create a pattern.',
+    threeLD: 'Please drag and drop the pictures below to the places you specified during registeration.',
+    threeRD: 'Please drag and drop the images below to your preferred locations to create a graphic pattern.'
 };
 
 const placeholders = {
